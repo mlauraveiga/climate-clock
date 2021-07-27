@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    <link rel="stylesheet" type="text/css" href="CSS/home.css">
+    <title>Climate Clock Coimbra</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="menuNav">
+                <a href="index.html"><img src="img/Logo_CCC_Pequeno-07.png" alt="logo-claro" width=150px></a>
+                <div id="hamburguer">
+                    <span class="barra" id="barraCima"></span>
+                    <span class="barra" id="barraMeio"></span>
+                    <span class="barra" id="barraBaixo"></span>
+                </div>
+                <div id="menu">
+                    <div class="menuInfo">
+                        <ul>
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="sobre.html">SOBRE</a></li>
+                            <li><a href="educacional.html">PROGRAMA EDUCACIONAL</a></li>
+                            <li><a href="parceiros.html">PARCEIROS</a></li>
+                            <li><a href="constroi.html">CONSTRÓI O TEU RELÓGIO PORTÁTIL</a></li>
+                            <li><a href="sugestões.html">SUGESTÕES SUSTENTÁVEIS</a></li>
+                        </ul>
+                    </div>
+                </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="fundo">
+            <div class="relogio">
+                <script src="https://climateclock.world/widget-v2.js" async pos></script>
+                <climate-clock />
+            </div>
+            <img src="img/UniversidadeCoimbra.png" alt="universidade_coimbra">
+        </section>
+
+        <section id="ciencia">
+            <h1>CIÊNCIA</h1>
+
+            <div class="cartoes">
+
+                <div class="cartoes-popup" id="popup">
+                    <div class="popup-info">
+                        <div class="texto-popup">
+                            <h2 id="titulo"></h2>
+                            <p id="informacao"></p>
+                        </div>
+                        <a href="#ciencia" id="fechar">
+                            <span class=cruz id="cruz-cima"></span>
+                            <span class=cruz id="cruz-baixo"></span>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="cartao" id="ciencia1">
+                    <h2>O que é o Relógio?</h2>
+                    <p>O Relógio do Clima é um gráfico que marca o prazo mais importante de todos: o do Mundo.
+                        O tempo nele presente indica a janela temporal disponível para evitarmos que os efeitos mais
+                        nefastos relativos ao aquecimento global se tornem irreversíveis.</p>
+                    <div class="mais-info botao-mais">
+                        <a href="#ciencia" id="cartao1">Ler Mais</a>
+                    </div>
+                </div>
+
+                <div class="cartao" id="ciencia2">
+                    <h2>De onde vêm os dados em que se baseia o Relógio?</h2>
+                    <p>O relógio baseia-se na investigação científica realizada pelos membros do IPCC (Painel
+                        Intergovernamental sobre Mudanças Climáticas, do inglês Intergovernmental Panel on Climate
+                        Change).</p>
+                    <div class="mais-info botao-mais">
+                        <a href="#ciencia" id="cartao2">Ler Mais</a>
+                    </div>
+
+                </div>
+
+
+                <div class="cartao" id="ciencia3">
+                    <h2>Porquê existir o Relógio do Clima?</h2>
+                    <p>O relógio pretende consciencializar a população no sentido de serem alterados
+                        comportamentos para evitar que seja ultrapassado o ponto de não retorno de 1.5º C
+                        no aquecimento global.</p>
+                    <div class="mais-info botao-mais">
+                        <a href="#ciencia" id="cartao3">Ler Mais</a>
+                    </div>
+                </div>
+
+                <div class="cartao" id="ciencia4">
+                    <h2>O que podemos mudar?</h2>
+                    <p>Qualquer mudança nas nossas prioridades e ações atuais podem evitar desastres
+                        climáticos e definir o destino do nosso planeta. É necessário agir rápido, em
+                        escala e de maneira coordenada, remando todos para o mesmo lado!</p>
+                    <div class="mais-info">
+                        <div class="botao-mais">
+                            <a href="#ciencia" id="cartao4">Ler Mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h1>#ActInTime</h1>
+
+        <section id="contactos">
+            <div class="info">
+                <p>Climate Clock Coimbra <br>
+                    climateclockcoimbra@gmail.com</p>
+            </div>
+
+            <div class="icones">
+                <a href="https://www.instagram.com/climateclock.coimbra/?hl=pt" target="_blank"><img
+                        src="img/Instagram.png" alt="instagram_icon" /></a>
+                <a href="https://www.linkedin.com/company/climate-clock-coimbra" target="_blank"><img
+                        src="img/linkedIn.png" alt="linkedin_icon" /></a>
+            </div>
+        </section>
+
+    </footer>
+
+    <script src="JS/menu.js"></script>
+    <script src="JS/cartoesciencia.js"></script>
+
+</body>

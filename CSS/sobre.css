@@ -1,0 +1,274 @@
+/*--------------------------- Alinhamento ---------------------------*/
+
+#sobre {
+  padding: 14% 8%;
+}
+
+/*------------------------------ Geral ------------------------------*/
+
+#sobre p,
+#sobre h1 {
+  padding-top: 4%;
+}
+
+/*--------------------------- Quem Somos ----------------------------*/
+
+.boxes {
+  padding: 4% 0;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.box {
+  width: 44%;
+  padding: 20px;
+  background: #ffffff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 40px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.box img {
+  padding: 8% 0% 4% 0%;
+  position: relative;
+}
+
+.box p {
+  padding: 4% 6%;
+}
+
+/*------------------------------- Objetivos ------------------------------*/
+
+.caixas {
+  text-align: center;
+}
+.ods {
+  display: inline-block;
+  justify-content: space-between;
+  vertical-align: top;
+  width: 45%;
+  margin: 4% 1% 0% 1%;
+  border-radius: 7px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  background-color: #fff;
+  font-weight: 500;
+  text-align: center;
+}
+
+.caixas h2 {
+  font-size: 18px;
+  color: #000;
+  padding: 4% 2%;
+}
+
+/*------------------------------- Equipa ------------------------------*/
+
+#equipa h1 {
+  padding: 10% 0 0% 0;
+}
+
+.cargos {
+  padding: 2% 0%;
+  display: flex;
+  width: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.cargos::-webkit-scrollbar {
+  height: 7px;
+  display: flex;
+  justify-content: center;
+}
+
+.cargos::-webkit-scrollbar-track-piece {
+  background: rgba(235, 51, 35, 0.4);
+  text-align: center;
+}
+
+.cargos::-webkit-scrollbar-thumb {
+  background: #eb3323;
+}
+
+.cargos::-webkit-scrollbar-button:end:increment {
+  width: 5%;
+  display: block;
+  background: transparent;
+}
+
+.cargos::-webkit-scrollbar-button:start:increment {
+  width: 5%;
+  display: block;
+  background: transparent;
+}
+
+.departamento {
+  padding: 10px 20px;
+  white-space: nowrap;
+  cursor: pointer;
+  margin-right: 1%;
+  background: rgba(235, 51, 35, 0.4);
+  border-radius: 6px;
+  font-family: 'Klima-Ultra', sans-serif;
+  text-align: center;
+  text-decoration: none;
+  color: #ffff;
+  font-size: 26px;
+  font-weight: 800;
+}
+
+.departamento:hover {
+  background: #eb3323;
+}
+
+/*--------------------------- Fotos da Equipa  ---------------------*/
+
+#equipa img {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 6px;
+}
+
+.elementos-equipa {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  /*overflow-x: hidden;*/
+  padding: 5% 0;
+  display: flex;
+}
+
+.elementos-equipa::-webkit-scrollbar {
+  height: 7px;
+  display: flex;
+  justify-content: center;
+}
+
+.elementos-equipa::-webkit-scrollbar-track-piece {
+  background: rgba(235, 51, 35, 0.4);
+  text-align: center;
+}
+
+.elementos-equipa::-webkit-scrollbar-thumb {
+  background: #eb3323;
+}
+
+.elementos-equipa::-webkit-scrollbar-button:end:increment {
+  width: 20%;
+  display: block;
+  background: transparent;
+}
+
+.elementos-equipa::-webkit-scrollbar-button:start:increment {
+  width: 20%;
+  display: block;
+  background: transparent;
+}
+
+.elemento {
+  margin-left: 25px;
+  display: none;
+  margin-right: 2%;
+  width: 250px;
+  text-align: center;
+}
+
+/*--------------------------- Responsividade --------------------------*/
+
+@media screen and (max-width: 1120px) {
+  .ods h2 {
+    font-size: 16px;
+  }
+
+  #cargos a {
+    width: 31.1%;
+  }
+}
+
+@media screen and (max-width: 974px) {
+  #cargos a {
+    width: 47.7%;
+  }
+}
+
+@media screen and (max-width: 890px) {
+  #sobre {
+    margin: 0 auto;
+    padding-top: 22%;
+    width: 70%;
+  }
+
+  .ods {
+    width: 100%;
+  }
+
+  .boxes {
+    display: block;
+  }
+
+  .box {
+    width: 95%;
+    margin: 8% auto;
+  }
+
+  .departamento {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 675px) {
+  #cargos a {
+    display: block;
+    width: 100%;
+  }
+
+  .departamento {
+    font-size: 18px;
+  }
+
+  .cargos {
+    padding: 6% 0%;
+  }
+
+  .elementos-equipa {
+    padding: 8% 0;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  #sobre {
+    padding-top: 30%;
+  }
+
+  .contentCaixa .equipa {
+    width: 100%;
+  }
+
+  .foto img {
+    width: 131px;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  #sobre {
+    padding-top: 30%;
+  }
+
+  .contentCaixa .equipa {
+    width: 100%;
+  }
+
+  .foto img {
+    width: 131px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .box {
+    margin: 8% auto;
+  }
+}

@@ -1,0 +1,214 @@
+/* --------------------------- Relógio ----------------------------*/
+
+.relogio {
+  position: absolute;
+  width: 65vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* -------------------------- Home Page ---------------------------*/
+
+#ciencia {
+  padding: 8%;
+}
+
+p {
+  padding: 0% 8% 2% 8%;
+}
+
+/* ---------------------- Carrossel Cartões -----------------------*/
+
+.cartoes {
+  padding: 4% 0%;
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  width: 100%;
+  margin-left: -12px;
+  padding-right: 2%;
+}
+
+.cartao {
+  padding: 20px 20px 40px 20px;
+  border-radius: 16px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+  margin-left: 25px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cartao p,
+.cartao h2 {
+  width: 25vw;
+  padding: 10px 20px;
+}
+.cartao p {
+  padding-bottom: 40px;
+}
+
+.mais-info a {
+  cursor: pointer;
+  padding: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  background-color: #eb3323;
+
+  color: #ffff;
+  text-decoration: none;
+  text-align: center;
+  font-size: 16px;
+  font-family: 'Klima-Ultra', sans-serif;
+  transition: 0.3s;
+}
+.mais-info a:hover {
+  opacity: 0.4;
+}
+
+/* --------------------- Barra Local Cartões ----------------------*/
+
+.cartoes::-webkit-scrollbar {
+  height: 7px;
+  display: flex;
+  justify-content: center;
+}
+
+.cartoes::-webkit-scrollbar-track-piece {
+  background: #ffdad4;
+  text-align: center;
+}
+
+.cartoes::-webkit-scrollbar-thumb {
+  background: #eb3323;
+}
+
+.cartoes::-webkit-scrollbar-button:end:increment {
+  width: 20%;
+  display: block;
+  background: transparent;
+}
+
+.cartoes::-webkit-scrollbar-button:start:increment {
+  width: 20%;
+  display: block;
+  background: transparent;
+}
+
+/* --------------------- Pop-Up Informação Completa ----------------------*/
+
+.cartoes-popup {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: none;
+}
+
+.popup-info {
+  background-color: #fff;
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  transform: translate(-50%, -50%);
+  border-radius: 16px;
+  padding: 2%;
+}
+
+.texto-popup {
+  padding-top: 8%;
+}
+
+.popup-info::-webkit-scrollbar {
+  width: 7px;
+}
+
+.popup-info::-webkit-scrollbar-track-piece {
+  background: #ffdad4;
+}
+
+.popup-info::-webkit-scrollbar-thumb {
+  background: #eb3323;
+}
+
+.popup-info::-webkit-scrollbar-button:end:increment {
+  height: 20%;
+  display: block;
+  background: transparent;
+}
+
+.popup-info::-webkit-scrollbar-button:start:increment {
+  height: 20%;
+  display: block;
+  background: transparent;
+}
+
+#fechar {
+  position: fixed;
+  top: 3vh;
+  right: 2vw;
+  width: 30px;
+  height: 30px;
+}
+
+.cruz {
+  position: absolute;
+  display: block;
+  width: 30px;
+  height: 4px;
+  z-index: 2;
+  background-color: #eb3323;
+}
+
+#cruz-cima {
+  transform: rotate(45deg);
+  top: 50%;
+}
+#cruz-baixo {
+  transform: rotate(-45deg);
+  top: 50%;
+}
+
+/* -------------------------- Responsividade ---------------------------*/
+
+@media screen and (max-width: 890px) {
+  .popup-info {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 890px) {
+  .cartao p,
+  .cartao h2 {
+    width: 50vw;
+  }
+
+  .popup-info {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .cartao p,
+  .cartao h2 {
+    width: 60vw;
+  }
+
+  #ciencia h1 {
+    padding-bottom: 6%;
+  }
+
+  .cartoes {
+    padding: 8% 0;
+  }
+}

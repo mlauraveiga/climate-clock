@@ -1,0 +1,141 @@
+/*-------------------------------- Alinhamento -------------------------------*/
+
+main {
+  padding: 14% 8%;
+}
+
+/*------------------------------ Texto Inicial ------------------------------*/
+
+#sugestoes-sustentaveis p,
+h1 {
+  padding-top: 4%;
+}
+
+/*------------------------------ Botões Marcas ------------------------------*/
+
+.botoes-marca {
+  margin-top: 5%;
+  padding: 4% 0%;
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  width: 100%;
+}
+
+.botoes-marca::-webkit-scrollbar {
+  height: 7px;
+  display: flex;
+}
+
+.botoes-marca::-webkit-scrollbar-track-piece {
+  background: rgba(15, 216, 125, 0.4);
+}
+
+.botoes-marca::-webkit-scrollbar-thumb {
+  background: #0fd87d;
+}
+
+.botoes-marca::-webkit-scrollbar-button:end:increment {
+  width: 20%;
+  display: block;
+  background: transparent;
+}
+
+.botoes-marca::-webkit-scrollbar-button:start:increment {
+  width: 20%;
+  display: block;
+  background: transparent;
+}
+
+.botao-marca {
+  padding: 10px 20px;
+  white-space: nowrap;
+  cursor: pointer;
+  margin-right: 1%;
+  background-color: rgba(15, 216, 125, 0.4);
+  border-radius: 6px;
+
+  text-align: center;
+  text-decoration: none;
+  color: #ffff;
+  font-size: 20px;
+  font-family: 'Klima-Ultra', sans-serif;
+}
+
+/*------------------------------- Cartões Marcas ------------------------------*/
+
+.cartao-marca {
+  margin: 6% auto;
+  background-color: #fff;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+  width: 65%;
+  border-radius: 16px;
+  padding: 45px;
+}
+
+.cartao-marca h2 {
+  padding: 0 0 15px 0;
+}
+
+.cartao-marca p {
+  padding-bottom: 15px;
+}
+
+.visitar-website {
+  text-align: center;
+  padding-top: 2%;
+}
+
+.cartao-marca a {
+  background-color: #0fd87d;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+
+  cursor: pointer;
+  background-color: #0fd87d;
+
+  padding: 10px;
+
+  width: fit-content;
+  text-decoration: none;
+  text-align: center;
+  color: #ffff;
+  font-size: 18px;
+  font-family: 'Klima-Ultra', sans-serif;
+}
+.cartao-marca a:hover {
+  opacity: 0.4;
+}
+
+/*------------------------------ Responsividade ------------------------------*/
+
+@media screen and (max-width: 890px) {
+  main {
+    margin: 0 auto;
+    padding-top: 36%;
+    width: 70%;
+  }
+
+  .botao-marca {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 675px) {
+  .cartao-marca {
+    margin: 10% auto;
+  }
+
+  .botao-marca {
+    font-size: 16px;
+  }
+
+  .cartao-marca a {
+    font-size: 16px;
+    padding: 2%;
+  }
+
+  .visitar-website {
+    padding-top: 4%;
+  }
+}

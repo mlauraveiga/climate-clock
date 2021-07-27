@@ -1,0 +1,259 @@
+/* --------------------------- Geral -------------------------------*/
+@font-face {
+  font-family: 'Klima-Regular';
+  src: url('../fonts/Klima-Regular.otf');
+}
+@font-face {
+  font-family: 'Klima-Ultra';
+  src: url('../fonts/Klima-Ultra.otf');
+}
+
+* {
+  margin: 0;
+  font-family: 'Klima-Regular', sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* ------------------------- Texto no Geral ------------------------- */
+
+h1 {
+  font-family: 'Klima-Ultra', sans-serif;
+  color: #000000;
+  font-size: 34px;
+}
+
+h2 {
+  font-family: 'Klima-Ultra', sans-serif;
+  padding: 4% 8%;
+  color: #000000;
+  font-size: 20px;
+}
+p {
+  color: #000000;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+/* ------------------------------ Logo -------------------------------*/
+
+nav img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* ----------------------------- Fundo  ------------------------------*/
+
+#fundo img {
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+}
+
+#fundo h1 {
+  color: #fff;
+  font-size: 56px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#fundo a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #fff;
+  font-size: 24px;
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#fundo a:hover {
+  font-size: 26px;
+  color: #0fd87d;
+  transition: 0.1s;
+}
+
+#info-programa-educacional,
+#info-constroi-relogio {
+  width: 80vw;
+  height: fit-content;
+  margin: 0 auto;
+  padding: 8% 0;
+}
+
+/* --------------------------- Hamburguer ----------------------------*/
+
+#hamburguer {
+  cursor: pointer;
+  position: fixed;
+  width: 40px;
+  height: 26px;
+  top: 5vh;
+  right: 3vh;
+  z-index: 2;
+}
+
+.barra {
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 4px;
+  transition: 0.4s ease-in-out;
+  background: #0fd87d;
+}
+
+#barraBaixo {
+  top: 96%;
+  transform: translate(0, -50%);
+}
+
+#barraMeio {
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+#barraCima {
+  top: 0;
+}
+
+/*------------------------- Desenho do Menu ------------------------*/
+
+#menu {
+  display: none;
+  position: fixed;
+  width: 100vw;
+  transition: all 0.5s ease;
+  z-index: 1;
+}
+
+.menuInfo {
+  float: right;
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  transition: all 0.5s ease;
+}
+
+.menuInfo ul {
+  margin-top: 10%;
+}
+
+.menuInfo li {
+  margin: 5vh 5vh 0 0;
+  list-style: none;
+  text-align: left;
+}
+
+.menuInfo a {
+  font-size: 44px;
+  text-decoration: none;
+  color: #fff;
+  line-height: 50px;
+  font-family: 'Klima-Ultra', sans-serif;
+}
+
+.menuInfo a:hover {
+  color: #0fd87d;
+  transition: 0.3s;
+}
+
+/* ------------------------------ Footer ----------------------------- */
+
+footer {
+  background-color: black;
+  padding: 4% 16%;
+}
+
+footer h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 64px;
+  padding: 2% 0;
+  border-bottom: 4px solid #fff;
+}
+
+#contactos {
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 0;
+}
+
+footer p {
+  color: #fff;
+}
+
+/* ------------------------- Responsividade ---------------------------*/
+
+@media screen and (max-width: 890px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 25.72px;
+  }
+
+  #fundo h1 {
+    text-align: center;
+  }
+
+  .texto-programa-educacional p {
+    margin: 0 auto;
+  }
+
+  .menuInfo ul {
+    margin-top: 20%;
+  }
+
+  .menuInfo a {
+    font-size: 34px;
+    line-height: 40px;
+  }
+
+  footer h1 {
+    font-size: 42px;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  h1 {
+    font-size: 22px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  .menuInfo ul {
+    margin-top: 30%;
+  }
+
+  #contactos {
+    display: block;
+    padding: 4% 0%;
+    text-align: center;
+  }
+
+  .info,
+  .icones {
+    padding: 2% 0;
+  }
+
+  .icones a {
+    margin: 0 1%;
+  }
+
+  footer p {
+    text-align: center;
+  }
+}

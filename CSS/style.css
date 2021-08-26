@@ -183,6 +183,10 @@ footer h1 {
   padding: 2% 0;
 }
 
+.info {
+  width: 50%;
+}
+
 footer p {
   color: #fff;
 }
@@ -238,6 +242,11 @@ footer p {
     margin-top: 30%;
   }
 
+  .menuInfo a {
+    font-size: 26px;
+    line-height: 32px;
+  }
+
   #contactos {
     display: block;
     padding: 4% 0%;
@@ -247,6 +256,10 @@ footer p {
   .info,
   .icones {
     padding: 2% 0;
+  }
+
+  .info {
+    width: 100%;
   }
 
   .icones a {

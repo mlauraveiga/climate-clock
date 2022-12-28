@@ -1,14 +1,14 @@
 /*--------------------------- Alinhamento ---------------------------*/
 
 #sobre {
-  padding: 14% 8%;
+  padding: 10% 8%;
 }
 
 /*------------------------------ Geral ------------------------------*/
 
 #sobre p,
 #sobre h1 {
-  padding-top: 4%;
+  padding-top: 3%;
 }
 
 /*--------------------------- Quem Somos ----------------------------*/
@@ -88,12 +88,12 @@
 }
 
 .cargos::-webkit-scrollbar-track-piece {
-  background: rgba(235, 51, 35, 0.4);
+  background: #ffdad4;
   text-align: center;
 }
 
 .cargos::-webkit-scrollbar-thumb {
-  background: #eb3323;
+  background: #FA373D;
 }
 
 .cargos::-webkit-scrollbar-button:end:increment {
@@ -113,7 +113,6 @@
   white-space: nowrap;
   cursor: pointer;
   margin-right: 1%;
-  background: rgba(235, 51, 35, 0.4);
   border-radius: 6px;
   font-family: 'Klima-Ultra', sans-serif;
   text-align: center;
@@ -124,7 +123,7 @@
 }
 
 .departamento:hover {
-  background: #eb3323;
+  background: #FA373D;
 }
 
 /*--------------------------- Fotos da Equipa  ---------------------*/
@@ -149,12 +148,12 @@
 }
 
 .elementos-equipa::-webkit-scrollbar-track-piece {
-  background: rgba(235, 51, 35, 0.4);
+  background: #ffdad4;
   text-align: center;
 }
 
 .elementos-equipa::-webkit-scrollbar-thumb {
-  background: #eb3323;
+  background: #FA373D;
 }
 
 .elementos-equipa::-webkit-scrollbar-button:end:increment {
@@ -171,7 +170,7 @@
 
 .elemento {
   margin-left: 25px;
-  display: none;
+  
   margin-right: 2%;
   width: 250px;
   text-align: center;

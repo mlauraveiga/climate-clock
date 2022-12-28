@@ -57,10 +57,10 @@ p {
 
 .mais-info a {
   cursor: pointer;
-  padding: 10px;
+  padding: 10px 15px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
   border-radius: 6px;
-  background-color: #eb3323;
+  background-color: #FA373D;
 
   color: #ffff;
   text-decoration: none;
@@ -82,12 +82,12 @@ p {
 }
 
 .cartoes::-webkit-scrollbar-track-piece {
-  background: #ffdad4;
+  background: #ffc4c6;
   text-align: center;
 }
 
 .cartoes::-webkit-scrollbar-thumb {
-  background: #eb3323;
+  background: #FA373D;
 }
 
 .cartoes::-webkit-scrollbar-button:end:increment {
@@ -142,7 +142,7 @@ p {
 }
 
 .popup-info::-webkit-scrollbar-thumb {
-  background: #eb3323;
+  background: #FA373D;
 }
 
 .popup-info::-webkit-scrollbar-button:end:increment {
@@ -171,7 +171,7 @@ p {
   width: 30px;
   height: 4px;
   z-index: 2;
-  background-color: #eb3323;
+  background-color: #FA373D;
 }
 
 #cruz-cima {

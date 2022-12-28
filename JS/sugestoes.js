@@ -15,15 +15,15 @@ var titulo = document.getElementById('nome-marca');
 var texto = document.getElementById('texto-marca');
 var botao = document.getElementById('botao');
 
-cartao1.style.backgroundColor = '#0fd87d';
+cartao1.style.backgroundColor = 'rgba(139, 190, 86, 1)';
 
 if (cartao1.addEventListener) {
   cartao1.addEventListener('click', function () {
     abreCartao.forEach(function (bot) {
-      bot.style.backgroundColor = 'rgba(15, 216, 125, 0.4)';
+      bot.style.backgroundColor = 'rgba(139, 190, 86, 0.4)';
     });
 
-    cartao1.style.backgroundColor = '#0fd87d';
+    cartao1.style.backgroundColor = 'rgba(139, 190, 86, 1)';
 
     titulo.innerText = 'LIAME';
     texto.innerHTML =
@@ -35,10 +35,10 @@ if (cartao1.addEventListener) {
 if (cartao2.addEventListener) {
   cartao2.addEventListener('click', function () {
     abreCartao.forEach(function (bot) {
-      bot.style.backgroundColor = 'rgba(15, 216, 125, 0.4)';
+      bot.style.backgroundColor = 'rgba(139, 190, 86, 0.4)';
     });
 
-    cartao2.style.backgroundColor = '#0fd87d';
+    cartao2.style.backgroundColor = 'rgba(139, 190, 86, 1)';
 
     titulo.innerText = 'EcoX';
     texto.innerHTML =
@@ -50,10 +50,10 @@ if (cartao2.addEventListener) {
 if (cartao3.addEventListener) {
   cartao3.addEventListener('click', function () {
     abreCartao.forEach(function (bot) {
-      bot.style.backgroundColor = 'rgba(15, 216, 125, 0.4)';
+      bot.style.backgroundColor = 'rgba(139, 190, 86, 0.4)';
     });
 
-    cartao3.style.backgroundColor = '#0fd87d';
+    cartao3.style.backgroundColor = 'rgba(139, 190, 86, 1)';
 
     titulo.innerText = 'Too Good To Go';
     texto.innerHTML =
@@ -65,10 +65,10 @@ if (cartao3.addEventListener) {
 if (cartao4.addEventListener) {
   cartao4.addEventListener('click', function () {
     abreCartao.forEach(function (bot) {
-      bot.style.backgroundColor = 'rgba(15, 216, 125, 0.4)';
+      bot.style.backgroundColor = 'rgba(139, 190, 86, 0.4)';
     });
 
-    cartao4.style.backgroundColor = '#0fd87d';
+    cartao4.style.backgroundColor = 'rgba(139, 190, 86, 1)';
 
     titulo.innerText = 'MALU Ecoshop';
     texto.innerHTML =
@@ -80,10 +80,10 @@ if (cartao4.addEventListener) {
 if (cartao5.addEventListener) {
   cartao5.addEventListener('click', function () {
     abreCartao.forEach(function (bot) {
-      bot.style.backgroundColor = 'rgba(15, 216, 125, 0.4)';
+      bot.style.backgroundColor = 'rgba(139, 190, 86, 0.4)';
     });
 
-    cartao5.style.backgroundColor = '#0fd87d';
+    cartao5.style.backgroundColor = 'rgba(139, 190, 86, 1)';
 
     titulo.innerText = 'Mind the Trash';
     texto.innerHTML =
@@ -95,10 +95,10 @@ if (cartao5.addEventListener) {
 if (cartao6.addEventListener) {
   cartao6.addEventListener('click', function () {
     abreCartao.forEach(function (bot) {
-      bot.style.backgroundColor = 'rgba(15, 216, 125, 0.4)';
+      bot.style.backgroundColor = 'rgba(139, 190, 86, 0.4)';
     });
 
-    cartao6.style.backgroundColor = '#0fd87d';
+    cartao6.style.backgroundColor = 'rgba(139, 190, 86, 1)';
 
     titulo.innerText = 'Georganics';
     texto.innerHTML =
@@ -110,10 +110,10 @@ if (cartao6.addEventListener) {
 if (cartao7.addEventListener) {
   cartao7.addEventListener('click', function () {
     abreCartao.forEach(function (bot) {
-      bot.style.backgroundColor = 'rgba(15, 216, 125, 0.4)';
+      bot.style.backgroundColor = 'rgba(139, 190, 86, 0.4)';
     });
 
-    cartao7.style.backgroundColor = '#0fd87d';
+    cartao7.style.backgroundColor = 'rgba(139, 190, 86, 1)';
 
     titulo.innerText = 'BioEscolha';
     texto.innerHTML =

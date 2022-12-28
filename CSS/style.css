@@ -1,36 +1,36 @@
 /* --------------------------- Geral -------------------------------*/
 @font-face {
-  font-family: 'Klima-Regular';
-  src: url('../fonts/Klima-Regular.otf');
+  font-family: 'Jost-Regular';
+  src: url('../fonts/Jost-Regular.ttf');
 }
 @font-face {
-  font-family: 'Klima-Ultra';
-  src: url('../fonts/Klima-Ultra.otf');
+  font-family: 'Jost-Bold';
+  src: url('../fonts/Jost-Bold.ttf');
 }
 
 * {
   margin: 0;
-  font-family: 'Klima-Regular', sans-serif;
+  font-family: 'Jost-Regular', sans-serif;
   scroll-behavior: smooth;
 }
 
 /* ------------------------- Texto no Geral ------------------------- */
 
 h1 {
-  font-family: 'Klima-Ultra', sans-serif;
+  font-family: 'Jost-Bold', sans-serif;
   color: #000000;
   font-size: 34px;
 }
 
 h2 {
-  font-family: 'Klima-Ultra', sans-serif;
+  font-family: 'Jost-Bold', sans-serif;
   padding: 4% 8%;
   color: #000000;
-  font-size: 20px;
+  font-size: 24px;
 }
 p {
   color: #000000;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 150%;
 }
 
@@ -73,7 +73,7 @@ nav img {
 
 #fundo a:hover {
   font-size: 26px;
-  color: #0fd87d;
+  color: #8BBE56;
   transition: 0.1s;
 }
 
@@ -103,7 +103,7 @@ nav img {
   width: 40px;
   height: 4px;
   transition: 0.4s ease-in-out;
-  background: #0fd87d;
+  background: #8BBE56;
 }
 
 #barraBaixo {
@@ -158,7 +158,7 @@ nav img {
 }
 
 .menuInfo a:hover {
-  color: #0fd87d;
+  color: #8BBE56;
   transition: 0.3s;
 }
 
